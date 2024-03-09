@@ -118,7 +118,9 @@ ul.navigation li a {
     .float-right img {
         margin: 0;
     }
-    .clear {
+    .clear::after {
+        content: "";
+        display: table;
         clear: both;
     }
 }
